@@ -18,7 +18,7 @@ public class AddToCartTest extends BaseTest {
 
     @Test
 
-    public void addToCartCheckTest (){
+    public void addToCartCheckTest() {
         String expectedMessage = "Age of Empires III";
         String actualMessage;
 

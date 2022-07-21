@@ -9,10 +9,11 @@ public class FilterAndGetResults {
         pages.Common.openUrl("https://www.humblebundle.com/store/search?sort=bestselling&hmb_source=navbar");
     }
 
-    public static void hoverOverFilter(){
+    public static void hoverOverFilter() {
         Common.clickElementByAction(Locators.GamesSection.hoverOverFilter);
-}
-    public static void selectOptionNewReleases(){
+    }
+
+    public static void selectOptionNewReleases() {
         Common.clickElement(Locators.GamesSection.selectFromDropDown);
     }
 

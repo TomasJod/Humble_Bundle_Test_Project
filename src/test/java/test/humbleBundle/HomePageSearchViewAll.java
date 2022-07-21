@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.Common;
 import pages.Locators;
 import test.BaseTest;
+import utils.Constants;
 
 public class HomePageSearchViewAll extends BaseTest {
 
@@ -22,7 +23,7 @@ public class HomePageSearchViewAll extends BaseTest {
 
 
         pages.humbleBundle.HomePageSearchViewAll.inputTextIntoSearchBox(expectedMessage);
-        Common.waitForElementToBeClickable(Locators.HomePage.buttonViewAllResults);
+        Common.waitForElementToBeVisible(Locators.HomePage.buttonViewAllResults);
 
         pages.humbleBundle.HomePageSearchViewAll.clickViewAllResults();
 

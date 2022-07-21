@@ -18,13 +18,13 @@ public class HomePageSearchDropDown extends BaseTest {
 
     @Test
 
-    public void testSearchDropDownResult (){
+    public void testSearchDropDownResult() {
 
         String expectedMessage = "Lego";
 
 
         pages.humbleBundle.HomePageSearchDropDown.inputTextIntoSearchBox(expectedMessage);
-        Common.waitForElementToBeClickable(Locators.HomePage.buttonViewAllResults);
+        Common.waitForElementToBeVisible(Locators.HomePage.buttonViewAllResults);
 
         try {
             String actualMessage = pages.humbleBundle.HomePageSearchDropDown.readSearchDropDownMessage();

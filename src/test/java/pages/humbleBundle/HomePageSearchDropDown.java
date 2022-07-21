@@ -9,6 +9,10 @@ public class HomePageSearchDropDown {
                 Locators.HomePage.inputSearchMessage, expectedMessage);
     }
 
+    public static void buttonNextSearchPage() {
+        pages.Common.clickElement(Locators.HomePage.clickDisplayNextPage);
+    }
+
     public static String readSearchDropDownMessage() {
         return pages.Common.getElementText(Locators.HomePage.fieldSearchDropDownResults);
     }

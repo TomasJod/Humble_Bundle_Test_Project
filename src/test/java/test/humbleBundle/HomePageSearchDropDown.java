@@ -25,8 +25,10 @@ public class HomePageSearchDropDown extends BaseTest {
 
         pages.humbleBundle.HomePageSearchDropDown.inputTextIntoSearchBox(expectedMessage);
         Common.waitForElementToBeVisible(Locators.HomePage.buttonViewAllResults);
+        pages.humbleBundle.HomePageSearchDropDown.buttonNextSearchPage();
 
         try {
+            Common.waitForElementToBeVisible(Locators.HomePage.buttonViewAllResults);
             String actualMessage = pages.humbleBundle.HomePageSearchDropDown.readSearchDropDownMessage();
             Assert.assertTrue(actualMessage.contains(expectedMessage));
         } catch (Exception e) {

@@ -1,13 +1,13 @@
 package pages.humbleBundle;
 
 import pages.Locators;
+import utils.Constants;
 
 public class HomePageSearchViewAll {
 
     public static void open() {
         pages.Common.openUrl("https://www.humblebundle.com/?hmb_source=navbar");
     }
-
 
     public static void inputTextIntoSearchBox(String expectedMessage) {
         pages.Common.sendKeysToElement(

@@ -49,6 +49,4 @@ public class Common {
         action.click();
         action.perform();
     }
-
-
 }

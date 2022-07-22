@@ -10,7 +10,7 @@ public class HomePageSearchDropDown {
     }
 
     public static void buttonNextSearchPage() {
-        pages.Common.clickElement(Locators.HomePage.clickDisplayNextPage);
+        pages.Common.clickElement(Locators.HomePage.buttonDisplayNextPage);
     }
 
     public static String readSearchDropDownMessage() {

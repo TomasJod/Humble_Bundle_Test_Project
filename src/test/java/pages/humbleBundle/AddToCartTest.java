@@ -15,7 +15,7 @@ public class AddToCartTest {
     }
 
     public static void clickAddToCart() {
-        pages.Common.clickElement(Locators.HomePage.clickAddToCart);
+        pages.Common.clickElement(Locators.HomePage.buttonAddToCart);
     }
 
     public static String fieldCartItemTotal() {

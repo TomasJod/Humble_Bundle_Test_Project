@@ -11,8 +11,8 @@ public class Locators {
         public static By fieldSearchViewAllResults = By.xpath("//span[contains(text(),'BATMAN')]");
         public static By firstResultClick = By.xpath("//*[@class = 'product-title'][1]");
         public static By fieldSearchDropDownResults = By.xpath("//span[contains(text(),'Lego')]");
-        public static By clickDisplayNextPage = By.xpath("//*[@class = 'hb hb-angle-double-right hb-2x']");
-        public static By clickAddToCart = By.xpath("//*[@class = 'add']");
+        public static By buttonDisplayNextPage = By.xpath("//*[@class = 'hb hb-angle-double-right hb-2x']");
+        public static By buttonAddToCart = By.xpath("//*[@class = 'add']");
         public static By fieldCartItemNumber = By.xpath("//*[@class = 'nav-item-content js-cart no-style-button white bounce']");
     }
 

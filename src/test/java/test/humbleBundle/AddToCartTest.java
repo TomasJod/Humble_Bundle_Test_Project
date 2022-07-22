@@ -3,8 +3,6 @@ package test.humbleBundle;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Common;
-import pages.Locators;
 import test.BaseTest;
 
 public class AddToCartTest extends BaseTest {

@@ -3,8 +3,6 @@ package test.humbleBundleGames;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Common;
-import pages.Locators;
 import test.BaseTest;
 
 public class FilterAndGetResults extends BaseTest {
@@ -22,7 +20,7 @@ public class FilterAndGetResults extends BaseTest {
 
         pages.humbleBundleGames.FilterAndGetResults.hoverOverFilter();
         pages.humbleBundleGames.FilterAndGetResults.selectOptionNewReleases();
-        Common.waitForElementToBeVisible(Locators.GamesSection.fieldResultsNewReleases);
+        pages.Common.waitForElementToBeVisible(pages.Locators.GamesSection.fieldResultsNewReleases);
         actualMessage = pages.humbleBundleGames.FilterAndGetResults.isResultMoreThenZero();
 
         Assert.assertNotNull(actualMessage);

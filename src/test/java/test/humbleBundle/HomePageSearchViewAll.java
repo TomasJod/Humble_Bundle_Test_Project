@@ -3,10 +3,7 @@ package test.humbleBundle;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Common;
-import pages.Locators;
 import test.BaseTest;
-import utils.Constants;
 
 public class HomePageSearchViewAll extends BaseTest {
 
@@ -23,7 +20,7 @@ public class HomePageSearchViewAll extends BaseTest {
 
 
         pages.humbleBundle.HomePageSearchViewAll.inputTextIntoSearchBox(expectedMessage);
-        Common.waitForElementToBeVisible(Locators.HomePage.buttonViewAllResults);
+        pages.Common.waitForElementToBeVisible(pages.Locators.HomePage.buttonViewAllResults);
 
         pages.humbleBundle.HomePageSearchViewAll.clickViewAllResults();
 

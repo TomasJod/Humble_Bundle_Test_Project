@@ -17,6 +17,7 @@ public class Driver {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--force-device-scale-factor=0.7");
+        options.addArguments("start-maximized");
         driver.set(new ChromeDriver(options));
         driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
     }
